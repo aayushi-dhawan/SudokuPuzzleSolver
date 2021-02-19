@@ -8,10 +8,11 @@ namespace SudokuPuzzle
         {
             Console.WriteLine("Welcome to Sudoku World");
             SudokuSolver objSolver = new SudokuSolver();
-            //objSolver.GetPuzzle();
+            objSolver.GetPuzzle();
             bool isSolvable = objSolver.SolvePuzzle(0,0);
-           // if(isSolvable)
+            if(isSolvable)
                 objSolver.PrintSolution();
+            
         }
     }
 }
