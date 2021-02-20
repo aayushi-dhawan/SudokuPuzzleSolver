@@ -41,12 +41,8 @@ namespace SudokuPuzzle
                 row = pair.Item1 ;
                 col = pair.Item2 ;
             }
-            else
-            {
-               // return false;
-            }
-
-            if (row == GRIDSIZE -1 && col == GRIDSIZE)
+           
+            if (row == GRIDSIZE && col == GRIDSIZE)
                 return true;
 
             int num = 1 ;
@@ -95,7 +91,7 @@ namespace SudokuPuzzle
         {
             try
             {
-                Tuple<int, int> pair = null;
+                Tuple<int, int> pair = Tuple.Create(GRIDSIZE,GRIDSIZE);
                 for (; row < GRIDSIZE; row++)
                 {
                     for (; col < GRIDSIZE; col++)
